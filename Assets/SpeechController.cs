@@ -83,6 +83,7 @@ public class SpeechController : MonoBehaviour
 
 	void Start ()
 	{
+		promptText.text = "";
 		buttonAText.text = "Hardworking people of this country, you are the ones who make me proud to be a fellow citizen….";
 		buttonBText.text = "People of Mostkiastan…";
 		buttonCText.text = "Slaves, Rabble, indebted servants, and assorted filth…";
@@ -116,7 +117,7 @@ public class SpeechController : MonoBehaviour
 			MobEnding ();
 			return;
 		}
-		promptText.text = promps [speechRound] + " : " + speechRound;
+		promptText.text = promps [speechRound];
 		buttonCText.text = negativeResponses [speechRound];
 		buttonBText.text = neutralResponses [speechRound];
 		buttonAText.text = positiveResponses [speechRound];
