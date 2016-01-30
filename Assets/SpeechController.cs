@@ -22,6 +22,9 @@ public class SpeechController : MonoBehaviour
 	 * , and add to the crownd felling based on what is sellected
 	 * 
 	 */
+
+
+
 	void AdvanceBackgroundImage ()
 	{
 		backgroundImage.sprite = backgroundImages [bgImageIterator];
@@ -32,6 +35,8 @@ public class SpeechController : MonoBehaviour
 		}
 
 	}
+
+
 
 	public void SpeechBoxAPress ()
 	{
